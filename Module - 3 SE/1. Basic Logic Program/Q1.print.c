@@ -5,7 +5,7 @@
 //d. Your Address
 #include <stdio.h>
  int main (){
- 	
+ 	//print details
  	printf("Name:Jignesh kumar");
  	printf("\nDob:03-02-2000");
  	printf("\nAge:24");
