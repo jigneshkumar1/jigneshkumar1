@@ -12,7 +12,7 @@ public:
    
     ATM() : pin(12345), accountBalance(20000.0) {}
 
-    //  current date and time
+   
     void displayWelcomeScreen() {
         time_t now = time(0);
         tm* localtm = localtime(&now);
@@ -33,7 +33,7 @@ public:
         return (enteredPIN == pin);
     }
 
-    // display help information
+   
     void displayHelp() {
         cout << "Help Screen:" << endl;
         cout << "1. Enter PIN to access your account." << endl;
