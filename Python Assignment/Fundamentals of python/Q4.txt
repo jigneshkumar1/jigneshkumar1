@@ -1,0 +1,21 @@
+• How memory is managed in Python? 
+
+Python manages memory automatically through several mechanisms:
+
+1. Reference Counting: Each object keeps track of how many references point to it.
+   When the count reaches zero, the object is deallocated.
+
+2. Garbage Collection: To handle circular references, Python’s garbage collector 
+   periodically checks for unreachable objects and frees their memory.
+
+3. Memory Pools: Small objects are allocated from pools using a specialized llocator 
+   called "pymalloc," which speeds up memory allocation.
+
+4. Dynamic Typing: Memory is allocated at runtime based on variable types, allowing 
+   for flexibility.
+
+5. Built-in Containers: Data structures like lists and dictionaries dynamically 
+   manage memory as they grow or shrink.
+
+Overall, Python's memory management aims for efficiency and ease of use, though 
+developers should be mindful of performance in complex applications.
